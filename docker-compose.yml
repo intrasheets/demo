@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+    server:
+      image: node:latest
+      ports:
+        - "3010:3000"
+      volumes:
+        - .:/usr/src/app
+      working_dir: /usr/src/app/server
+      command: sh -c "npm install && npm start"
+      depends_on:
+        - mongodb
+
+    mongodb:
+      image: mongo:latest
+      ports:
+        - 27018:27017
+      volumes:
+        - mongodb-data:/data
+
+#    ollama:
+#      image: ollama/ollama
+#      ports:
+#        - "11436:11434"
+#      volumes:
+#        - ollama_volume:/root/.ollama
+#      deploy:
+#        resources:
+#          reservations:
+#            devices:
+#              - driver: nvidia
+#                count: all
+#                capabilities: [gpu]
+
+
+volumes:
+    postgres_data_jexcel:
+    mongodb-data:
+    ollama_volume:
+
