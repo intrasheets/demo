@@ -7,6 +7,8 @@ require('intrasheets/dist/style.css');
 
 require('./style.css');
 
+const license = 'yourLicenseKey';
+
 function Sheets() {
     // Jwt token
     let token = localStorage.getItem('intrasheets');
@@ -23,7 +25,7 @@ function Sheets() {
     let invitation = path[3];
 
     // Set your JSS license key (The following key only works for one day)
-    jspreadsheet.setLicense('MTBiNWIzY2E5NzhjZTllODA2OGNmMDZlMGFkZWM2MDkxY2UwN2I0ZDlmZTdlMDQ0MjM1MDQ4N2M0ZDRjZGMxZjVlYTJhZTc0MTAyNTVlZGMxNWEyM2E0YjMzNjZkYmU0ZWQ5ODdmOGI1M2JhNTJkNWI3MTNmMTlhNDQxYzJiNTEsZXlKamJHbGxiblJKWkNJNklqTTFObUV4T1RKaU56a3hNMkl3TkdNMU5EVTNOR1F4T0dNeU9HUTBObVUyTXprMU5ESTRZV0lpTENKdVlXMWxJam9pU25Od2NtVmhaSE5vWldWMElpd2laR0YwWlNJNk1UYzJNREExTURnd01Dd2laRzl0WVdsdUlqcGJJbXB6YUdWc2JDNXVaWFFpTENKamMySXVZWEJ3SWl3aWFuTndjbVZoWkhOb1pXVjBMbU52YlNJc0ltTmtjRzR1YVc4aUxDSnBiblJ5WVhOb1pXVjBjeTVqYjIwaUxDSnpkR0ZqYTJKc2FYUjZMbU52YlNJc0luZGxZbU52Ym5SaGFXNWxjaTVwYnlJc0ltUmxkbVZzYjNBdWJHbG5hSFJ1YVc1bkxtWnZjbU5sTG1OdmJTSXNJbmRsWWlJc0lteHZZMkZzYUc5emRDSmRMQ0p3YkdGdUlqb2lNelVpTENKelkyOXdaU0k2V3lKMk55SXNJblk0SWl3aWRqa2lMQ0oyTVRBaUxDSjJNVEVpTENKbWIzSnRjeUlzSW1admNtMTFiR0VpTENKeVpXNWtaWElpTENKd1lYSnpaWElpTENKcGJYQnZjblJsY2lJc0luWmhiR2xrWVhScGIyNXpJaXdpWTI5dGJXVnVkSE1pTENKelpXRnlZMmdpTENKamFHRnlkSE1pTENKd2NtbHVkQ0lzSW1KaGNpSXNJbk5vWldWMGN5SXNJbk5vWVhCbGN5SXNJbk5sY25abGNpSXNJbVp2Y20xaGRDSXNJbWx1ZEhKaGMyaGxaWFJ6SWwxOQ==');
+    jspreadsheet.setLicense(license);
 
     // Register the extension
     jspreadsheet.setExtensions({ intrasheets });
