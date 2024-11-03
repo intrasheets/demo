@@ -13,10 +13,12 @@
   "author": "Jspreadsheet",
   "license": "THIS SOFTWARE REQUIRES A LICENSE",
   "dependencies": {
-    "@jspreadsheet/server": "^11.9.0",
-    "@jspreadsheet/server-api": "^1.0.0",
-    "@jspreadsheet/server-mongodb": "^1.0.0",
-    "@jspreadsheet/openai": "^1.0.2"
+    "@jspreadsheet/server": "^11.11.0",
+    "@jspreadsheet/server-api": "^1.0.3",
+    "@jspreadsheet/server-mongodb": "^1.0.1",
+    "@jspreadsheet/openai": "^1.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "supervisor": "^0.12.0"
