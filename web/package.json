@@ -16,6 +16,6 @@
     "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
-    "intrasheets": "^3.0.7"
+    "intrasheets": "^3.0.9"
   }
 }
